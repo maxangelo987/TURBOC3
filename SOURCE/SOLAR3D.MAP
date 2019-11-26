@@ -1,0 +1,762 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 091A8H 091A9H _TEXT              CODE
+ 091B0H 0B926H 02777H EMU_PROG           CODE
+ 0B930H 0BEF7H 005C8H E87_PROG           CODE
+ 0BF00H 0BF00H 00000H _FARDATA           FAR_DATA
+ 0BF00H 0BF00H 00000H _FARBSS            FAR_BSS
+ 0BF00H 0BF00H 00000H _OVERLAY_          OVRINFO
+ 0BF00H 0BF00H 00000H _1STUB_            STUBSEG
+ 0BF00H 0D231H 01332H _DATA              DATA
+ 0D232H 0D235H 00004H _CVTSEG            DATA
+ 0D236H 0D241H 0000CH _SCNSEG            DATA
+ 0D242H 0D242H 00000H _CONST             CONST
+ 0D242H 0D277H 00036H _INIT_             INITDATA
+ 0D278H 0D278H 00000H _INITEND_          INITDATA
+ 0D278H 0D28FH 00018H _EXIT_             EXITDATA
+ 0D290H 0D290H 00000H _EXITEND_          EXITDATA
+ 0D290H 0D2DBH 0004CH _BSS               BSS
+ 0D2DCH 0D2DCH 00000H _BSSEND            BSSEND
+ 0D2E0H 0D35FH 00080H _STACK             STACK
+
+  Address         Publics by Name
+
+ 0000:533A       operator delete(void near*)
+ 0000:0554       operator <<(ostream near&,vector near&)
+ 0000:052B       operator *(double,vector near&)
+ 0000:55DB       operator new(unsigned int)
+ 0000:3586       Camera::Camera(vector,vector,vector)
+ 0000:3AFD       Camera::move(vector near&)
+ 0000:3FC0       Camera::position(vector near&)
+ 0000:3835       Camera::rmove(vector near&)
+ 0000:3BD4       Camera::rotate(vector near&)
+ 0000:3E7F       Color::Color(char,char,char,char)
+ 0000:33CD       Color::operator long()
+ 0BF0:00B7       Color::c
+ 0000:352F       Color::RGB(char,char,char,char)
+ 0000:7BA1       endl(ostream near&)
+ 0000:7C32       filebuf::filebuf(int)
+ 0000:7CBC       filebuf::~filebuf()
+ 0000:7BBB       filebuf::close()
+ 0BF0:11B6       filebuf::openprot
+ 0000:7D00       filebuf::overflow(int)
+ 0000:7E7F       filebuf::seekoff(long,seek_dir,int)
+ 0000:7DFC       filebuf::setbuf(char near*,int)
+ 0000:7FA6       filebuf::sync()
+ 0000:803F       filebuf::underflow()
+ 0000:82E4       fpclass(long double)
+ 0000:8327       fpcopysign(long double,long double)
+ 0000:0457       getMODEinfo(int,MODEinfo near*)
+ 0000:0422       getSVGAinfo(SVGAinfo near*)
+ 0000:05B7       Graphics::Graphics(Source near&)
+ 0000:376E       Graphics::~Graphics()
+ 0000:3458       Graphics::changebank(int)
+ 0000:0791       Graphics::circle3d(vector,double,vector,Color,Color)
+ 0000:37EB       Graphics::clearscreen()
+ 0000:3E40       Graphics::close()
+ 0000:1B7F       Graphics::drawImage(Image near&,int,int,int,int,int,int)
+ 0000:1135       Graphics::fillcircle(vector,double,Color)
+ 0000:162E       Graphics::fillrect(int,int,int,int,long)
+ 0000:1858       Graphics::fillrect(int,int,int,int,Image near&)
+ 0000:1EF2       Graphics::getImage(int,int,int,int)
+ 0000:0717       Graphics::init()
+ 0000:0760       Graphics::initmouse(void(near*)(Graphics near&))
+ 0000:3814       Graphics::next()
+ 0000:435C       Graphics::nextactive()
+ 0000:436B       Graphics::nextvisual()
+ 0000:33F7       Graphics::putpixel(int,int,long)
+ 0000:431C       Graphics::setactivepage(int)
+ 0000:37CE       Graphics::setflipping()
+ 0000:4333       Graphics::setvisualpage(int)
+ 0000:3555       Image::Image(long near*,int,int)
+ 0000:900B       ios::ios()
+ 0000:9032       ios::~ios()
+ 0BF0:1320       ios::adjustfield
+ 0BF0:131C       ios::basefield
+ 0BF0:1324       ios::floatfield
+ 0000:9061       ios::init(streambuf near*)
+ 0BF0:1328       ios::nextbit
+ 0000:909F       ios::setf(long)
+ 0000:9148       ios::setstate(int)
+ 0BF0:132E       ios::stdioflush
+ 0000:916D       ios::tie(ostream near*)
+ 0BF0:132C       ios::usercount
+ 0000:7AE9       Iostream_delete()
+ 0000:81A4       istream::istream()
+ 0000:824D       istream::~istream()
+ 0000:818E       istream_withassign::operator =(streambuf near*)
+ 0000:81F6       istream_withassign::istream_withassign()
+ 0000:8294       istream_withassign::~istream_withassign()
+ 0000:03C3       mn_()
+ 0000:42FD       Mouse::~Mouse()
+ 0000:44AC       Mouse::hide()
+ 0000:3314       Mouse::setrestriction(int,int,int,int)
+ 0000:883B       ostream::ostream()
+ 0000:88DF       ostream::~ostream()
+ 0000:32DC       ostream::operator <<(double)
+ 0000:874F       ostream::operator <<(long double)
+ 0000:41C2       ostream::operator <<(ostream near&(near*)(ostream near&))
+ 0000:32F9       ostream::operator <<(const char near*)
+ 0000:89A5       ostream::operator <<(char)
+ 0000:8A28       ostream::do_opfx()
+ 0000:8A4F       ostream::do_osfx()
+ 0000:897B       ostream::flush()
+ 0000:8A87       ostream::outstr(const char near*,const char near*)
+ 0000:8825       ostream_withassign::operator =(streambuf near*)
+ 0000:8888       ostream_withassign::ostream_withassign()
+ 0000:892B       ostream_withassign::~ostream_withassign()
+ 0000:2553       planet8()
+ 0000:3EB6       planet::planet(double,double,double,Color,Color)
+ 0000:2940       plot()
+ 0000:03E4       Random(double)
+ 0000:37BD       randomize()
+ 0000:42C6       Rect::Rect(int,int,int,int)
+ 0000:04C3       setbank(int)
+ 0000:04F4       setstartpixel(int,int)
+ 0000:0492       setSVGAmode(int)
+ 0000:55C2       set_new_handler(void(near*)())
+ 0000:03A8       showbits(double)
+ 0000:0398       showbits(float)
+ 0000:02D9       showbits(int)
+ 0000:031E       showbits(long)
+ 0000:0291       showbits(char)
+ 0000:0342       showmemorybits(int)
+ 0000:0362       showmemorybits(long)
+ 0000:2FD4       showtext()
+ 0000:36CC       Source::Source()
+ 0000:8CB3       streambuf::streambuf()
+ 0000:8E0B       streambuf::~streambuf()
+ 0000:8C83       streambuf::doallocate()
+ 0000:8D07       streambuf::do_sgetn(char near*,int)
+ 0000:8D8F       streambuf::do_sputn(const char near*,int)
+ 0000:8E3A       streambuf::overflow(int)
+ 0000:8E45       streambuf::pbackfail(int)
+ 0000:8F3E       streambuf::seekoff(long,seek_dir,int)
+ 0000:8F4C       streambuf::seekpos(long,int)
+ 0000:8E70       streambuf::setb(char near*,char near*,int)
+ 0000:8E50       streambuf::setbuf(char near*,int)
+ 0000:8ED5       streambuf::setg(char near*,char near*,char near*)
+ 0000:8F11       streambuf::setp(char near*,char near*)
+ 0000:8F6B       streambuf::sputn(const char near*,int)
+ 0000:8FAF       streambuf::sync()
+ 0000:8FE7       streambuf::underflow()
+ 0000:4418       vector::operator +(vector near&)
+ 0000:3394       vector::vector(double,double,double)
+ 0000:4207       vector::operator /(double)
+ 0000:324C       vector::operator *(double)
+ 0000:4384       vector::operator -(vector near&)
+ 0000:3475       vector::operator -()
+ 0000:410F       vector::cross(vector near&)
+ 0000:3502       vector::dot(vector near&)
+ 0000:41D0       vector::mod()
+ 0000:3367       vector::unit()
+ 0000:5811       _vector_new_(void near*,unsigned int,unsigned int,unsigned int,...)
+ 0BF0:0000       DATASEG@
+ 0000:028D       DGROUP@
+ 091B:2152       e086_Entry
+ 091B:26E0       e086_Shortcut
+ 0B93:0306       e087_Entry
+ 0B93:03C6       e087_Shortcut
+ 0B93:0430       e087_Trap
+ 0000:FE32  Abs  FIARQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:1632  Abs  FIERQQ
+ 0000:0632  Abs  FISRQQ
+ 0000:A23D  Abs  FIWRQQ
+ 0000:4000  Abs  FJARQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:8000  Abs  FJSRQQ
+ 0000:53F8       F_LDIV@
+ 0000:5407       F_LMOD@
+ 0000:53FF       F_LUDIV@
+ 0000:540F       F_LUMOD@
+ 0000:53F8       LDIV@
+ 0000:5407       LMOD@
+ 0000:53FF       LUDIV@
+ 0000:540F       LUMOD@
+ 0000:52EA       N_FTOL@
+ 0000:53F5       N_LDIV@
+ 0000:5404       N_LMOD@
+ 0000:53FC       N_LUDIV@
+ 0000:540C       N_LUMOD@
+ 0000:5613       N_LXMUL@
+ 0000:562A       N_SCOPY@
+ 0000:0278       _abort
+ 0000:52BD       _acos
+ 0000:52D4       _asin
+ 0000:5316       _atexit
+ 0000:6BB0       _atoi
+ 0000:6B40       _atol
+ 0000:5EDB       _brk
+ 0BF0:07DD       _bx
+ 0BF0:07F5       _by
+ 0BF0:080D       _bz
+ 0BF0:0825       _c
+ 0BF0:00BB       _cam
+ 0BF0:114E       _cerr
+ 0BF0:1100       _cin
+ 0BF0:1174       _clog
+ 0000:6BBC       _close
+ 0000:5175       _cos
+ 0BF0:1128       _cout
+ 0000:602A       _cprintf
+ 0BF0:0847       _d
+ 0BF0:10F2       _daylight
+ 0000:624E       _delay
+ 0BF0:1075       _directvideo
+ 0000:7370       _dostounix
+ 0BF0:10BC       _environ
+ 0BF0:0094       _errno
+ 0000:5394       _exit
+ 0000:4723       _fabs
+ 0000:6C00       _fflush
+ 0000:6C7D       _flushall
+ 0000:6CB5       _fprintf
+ 0000:6EAC       _fputc
+ 0000:6FD1       _fputchar
+ 0000:6506       _free
+ 0000:6D28       _fseek
+ 0000:6D8C       _ftell
+ 0BF0:0469       _g
+ 0000:62AF       _getch
+ 0000:62C8       _getche
+ 0000:53CF       _getdate
+ 0000:6DD7       _getenv
+ 0000:6301       _gettext
+ 0000:53E2       _gettime
+ 0000:6396       _int86
+ 0000:63BB       _int86x
+ 0000:54EE       _isatty
+ 0000:6457       _kbhit
+ 0000:5599       _lseek
+ 0000:21FE       _main
+ 0000:65D5       _malloc
+ 0000:503B       _matherr
+ 0000:6E36       _memcpy
+ 0000:6E7B       _memset
+ 0000:6469       _movetext
+ 0BF0:083D       _p
+ 0BF0:0123       _pl
+ 0000:5030       _pow10
+ 0000:677D       _putch
+ 0000:6355       _puttext
+ 0BF0:06D5       _r
+ 0000:5657       _rand
+ 0000:723B       _read
+ 0000:672C       _realloc
+ 0000:5EE7       _sbrk
+ 0BF0:0455       _sc
+ 0000:56AA       _segread
+ 0000:56BF       _setdate
+ 0000:6E55       _setmem
+ 0000:56D2       _settime
+ 0000:723E       _setvbuf
+ 0000:509E       _sin
+ 0000:5061       _sqrt
+ 0000:5646       _srand
+ 0BF0:0135       _Star
+ 0000:5782       _stime
+ 0000:7308       _strcpy
+ 0000:732A       _strlen
+ 0000:7344       _strncpy
+ 0BF0:00AA       _st_
+ 0BF0:083F       _t
+ 0BF0:0859       _t1
+ 0BF0:085B       _t2
+ 0000:57FB       _tell
+ 0000:57B4       _time
+ 0BF0:10EE       _timezone
+ 0BF0:10EA       _tzname
+ 0000:7655       _tzset
+ 0000:62E5       _ungetch
+ 0000:7487       _unixtodos
+ 0BF0:07AD       _v1
+ 0BF0:07C5       _v2
+ 0000:6B1E       _wherex
+ 0000:6B2D       _wherey
+ 0000:79E1       _write
+ 0BF0:0A30       __8087
+ 0000:1000  Abs  __AHINCR
+ 0000:000C  Abs  __AHSHIFT
+ 0BF0:0D20       __atexitcnt
+ 0BF0:1390       __atexittbl
+ 0BF0:00A2       __brklvl
+ 0BF0:0084       __C0argc
+ 0BF0:0086       __C0argv
+ 0000:60FC       __c0crtinit
+ 0BF0:0088       __C0environ
+ 0BF0:10B5       __cChar
+ 0000:53B5       __cexit
+ 0BF0:10B4       __cFlag
+ 0000:016F       __checknull
+ 0000:015C       __cleanup
+ 0000:6BE2       __close
+ 0000:5EF7       __CPUTN
+ 0000:6119       __crtinit
+ 0BF0:0D22       __ctype
+ 0000:0000  Abs  __cvtfak
+ 0000:53C3       __c_exit
+ 0BF0:0A44       __default87
+ 0BF0:0F98       __doserrno
+ 0000:54DC       __DOSERROR
+ 0BF0:0F9A       __dosErrorToSV
+ 0BF0:0C10       __emu
+ 0BF0:008A       __envLng
+ 0BF0:008C       __envseg
+ 0BF0:008E       __envSize
+ 0000:53A3       __exit
+ 0BF0:0E24       __exitbuf
+ 0BF0:0E26       __exitfopen
+ 0BF0:0E28       __exitopen
+ 0BF0:10B6       __first
+ 0000:8087  Abs  __floatconvert
+ 0000:4EDF       __fperror
+ 0BF0:0F94       __fpstklen
+ 0000:471F       __fpuint
+ 0000:6E95       __fputc
+ 0000:6FE2       __FPUTN
+ 0BF0:009E       __heapbase
+ 0BF0:0F96       __heaplen
+ 0BF0:00A6       __heaptop
+ 0BF0:0A4A       __huge_dble
+ 0BF0:0A46       __huge_flt
+ 0BF0:0A52       __huge_ldble
+ 0BF0:0A5C       __indefinite
+ 0BF0:0074       __Int0Vector
+ 0BF0:0078       __Int4Vector
+ 0BF0:007C       __Int5Vector
+ 0BF0:0080       __Int6Vector
+ 0000:54A3       __IOERROR
+ 0000:77C4       __ISDST
+ 0BF0:10B8       __last
+ 0BF0:0A41       __LDT
+ 0000:4732       __LDTRUNC
+ 0000:54FF       __LONGTOA
+ 0000:50E9       __matherr
+ 0BF0:0A6A       __mathwhy
+ 0000:028F       __MMODEL
+ 0BF0:10D0       __monthDay
+ 0BF0:0FF4       __new_handler
+ 0BF0:0F6A       __nfile
+ 0000:62C8       __Ngetche
+ 0000:62E5       __Nungetch
+ 0BF0:0F6C       __openfd
+ 0BF0:0092       __osmajor
+ 0BF0:0093       __osminor
+ 0BF0:0092       __osversion
+ 0000:4F67       __POW10
+ 0BF0:0A40       __protected
+ 0BF0:0090       __psp
+ 0000:567D       __read
+ 0000:6790       __REALCVT
+ 0BF0:1332       __RealCvtVector
+ 0000:01EC       __restorezero
+ 0BF0:10BA       __rover
+ 0BF0:1336       __ScanTodVector
+ 0000:68C0       __SCREENIO
+ 0000:6961       __SCROLL
+ 0000:0000  Abs  __setenvp__
+ 0000:56E5       __setupio
+ 0BF0:0096       __StartTime
+ 0BF0:0FFA       __stklen
+ 0BF0:0E2A       __streams
+ 0000:0197       __terminate
+ 0BF0:0A60       __tiny_ldble
+ 0000:0000  Abs  __turboCrt
+ 0000:0000  Abs  __turboCvt
+ 0000:8087  Abs  __turboFloat
+ 0000:557C       __UTOA
+ 0000:68FC       __VALIDATEXY
+ 0BF0:0092       __version
+ 0BF0:1066       __video
+ 0000:6078       __VideoInt
+ 0000:593B       __VPRINTER
+ 0000:5DE9       __VPTR
+ 0000:5E0E       __VRAM
+ 0000:6B14       __wherexy
+ 0000:79A7       __write
+ 0BF0:1064       __wscroll
+ 0000:4CE0       __XCVT
+ 0000:79E4       __xfflush
+ 0000:5E88       ___brk
+ 0BF0:009C       ___brklvl
+ 0000:4638       ___fpreset
+ 0BF0:009A       ___heapbase
+ 0000:7173       ___read
+ 0000:5EAA       ___sbrk
+ 0BF0:13D0       ___SignalPtr
+ 0000:78A3       ___write
+
+  Address         Publics by Value
+
+ 0000:0000  Abs  __turboCvt
+ 0000:0000  Abs  __turboCrt
+ 0000:0000  Abs  __cvtfak
+ 0000:0000  Abs  __setenvp__
+ 0000:000C  Abs  __AHSHIFT
+ 0000:0632  Abs  FISRQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:1000  Abs  __AHINCR
+ 0000:1632  Abs  FIERQQ
+ 0000:4000  Abs  FJARQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:8000  Abs  FJSRQQ
+ 0000:8087  Abs  __turboFloat
+ 0000:8087  Abs  __floatconvert
+ 0000:A23D  Abs  FIWRQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:FE32  Abs  FIARQQ
+ 0000:015C       __cleanup
+ 0000:016F       __checknull
+ 0000:0197       __terminate
+ 0000:01EC       __restorezero
+ 0000:0278       _abort
+ 0000:028D       DGROUP@
+ 0000:028F       __MMODEL
+ 0000:0291       showbits(char)
+ 0000:02D9       showbits(int)
+ 0000:031E       showbits(long)
+ 0000:0342       showmemorybits(int)
+ 0000:0362       showmemorybits(long)
+ 0000:0398       showbits(float)
+ 0000:03A8       showbits(double)
+ 0000:03C3       mn_()
+ 0000:03E4       Random(double)
+ 0000:0422       getSVGAinfo(SVGAinfo near*)
+ 0000:0457       getMODEinfo(int,MODEinfo near*)
+ 0000:0492       setSVGAmode(int)
+ 0000:04C3       setbank(int)
+ 0000:04F4       setstartpixel(int,int)
+ 0000:052B       operator *(double,vector near&)
+ 0000:0554       operator <<(ostream near&,vector near&)
+ 0000:05B7       Graphics::Graphics(Source near&)
+ 0000:0717       Graphics::init()
+ 0000:0760       Graphics::initmouse(void(near*)(Graphics near&))
+ 0000:0791       Graphics::circle3d(vector,double,vector,Color,Color)
+ 0000:1135       Graphics::fillcircle(vector,double,Color)
+ 0000:162E       Graphics::fillrect(int,int,int,int,long)
+ 0000:1858       Graphics::fillrect(int,int,int,int,Image near&)
+ 0000:1B7F       Graphics::drawImage(Image near&,int,int,int,int,int,int)
+ 0000:1EF2       Graphics::getImage(int,int,int,int)
+ 0000:21FE       _main
+ 0000:2553       planet8()
+ 0000:2940       plot()
+ 0000:2FD4       showtext()
+ 0000:324C       vector::operator *(double)
+ 0000:32DC       ostream::operator <<(double)
+ 0000:32F9       ostream::operator <<(const char near*)
+ 0000:3314       Mouse::setrestriction(int,int,int,int)
+ 0000:3367       vector::unit()
+ 0000:3394       vector::vector(double,double,double)
+ 0000:33CD       Color::operator long()
+ 0000:33F7       Graphics::putpixel(int,int,long)
+ 0000:3458       Graphics::changebank(int)
+ 0000:3475       vector::operator -()
+ 0000:3502       vector::dot(vector near&)
+ 0000:352F       Color::RGB(char,char,char,char)
+ 0000:3555       Image::Image(long near*,int,int)
+ 0000:3586       Camera::Camera(vector,vector,vector)
+ 0000:36CC       Source::Source()
+ 0000:376E       Graphics::~Graphics()
+ 0000:37BD       randomize()
+ 0000:37CE       Graphics::setflipping()
+ 0000:37EB       Graphics::clearscreen()
+ 0000:3814       Graphics::next()
+ 0000:3835       Camera::rmove(vector near&)
+ 0000:3AFD       Camera::move(vector near&)
+ 0000:3BD4       Camera::rotate(vector near&)
+ 0000:3E40       Graphics::close()
+ 0000:3E7F       Color::Color(char,char,char,char)
+ 0000:3EB6       planet::planet(double,double,double,Color,Color)
+ 0000:3FC0       Camera::position(vector near&)
+ 0000:410F       vector::cross(vector near&)
+ 0000:41C2       ostream::operator <<(ostream near&(near*)(ostream near&))
+ 0000:41D0       vector::mod()
+ 0000:4207       vector::operator /(double)
+ 0000:42C6       Rect::Rect(int,int,int,int)
+ 0000:42FD       Mouse::~Mouse()
+ 0000:431C       Graphics::setactivepage(int)
+ 0000:4333       Graphics::setvisualpage(int)
+ 0000:435C       Graphics::nextactive()
+ 0000:436B       Graphics::nextvisual()
+ 0000:4384       vector::operator -(vector near&)
+ 0000:4418       vector::operator +(vector near&)
+ 0000:44AC       Mouse::hide()
+ 0000:4638       ___fpreset
+ 0000:471F       __fpuint
+ 0000:4723       _fabs
+ 0000:4732       __LDTRUNC
+ 0000:4CE0       __XCVT
+ 0000:4EDF       __fperror
+ 0000:4F67       __POW10
+ 0000:5030       _pow10
+ 0000:503B       _matherr
+ 0000:5061       _sqrt
+ 0000:509E       _sin
+ 0000:50E9       __matherr
+ 0000:5175       _cos
+ 0000:52BD       _acos
+ 0000:52D4       _asin
+ 0000:52EA       N_FTOL@
+ 0000:5316       _atexit
+ 0000:533A       operator delete(void near*)
+ 0000:5394       _exit
+ 0000:53A3       __exit
+ 0000:53B5       __cexit
+ 0000:53C3       __c_exit
+ 0000:53CF       _getdate
+ 0000:53E2       _gettime
+ 0000:53F5       N_LDIV@
+ 0000:53F8       F_LDIV@
+ 0000:53F8       LDIV@
+ 0000:53FC       N_LUDIV@
+ 0000:53FF       F_LUDIV@
+ 0000:53FF       LUDIV@
+ 0000:5404       N_LMOD@
+ 0000:5407       F_LMOD@
+ 0000:5407       LMOD@
+ 0000:540C       N_LUMOD@
+ 0000:540F       LUMOD@
+ 0000:540F       F_LUMOD@
+ 0000:54A3       __IOERROR
+ 0000:54DC       __DOSERROR
+ 0000:54EE       _isatty
+ 0000:54FF       __LONGTOA
+ 0000:557C       __UTOA
+ 0000:5599       _lseek
+ 0000:55C2       set_new_handler(void(near*)())
+ 0000:55DB       operator new(unsigned int)
+ 0000:5613       N_LXMUL@
+ 0000:562A       N_SCOPY@
+ 0000:5646       _srand
+ 0000:5657       _rand
+ 0000:567D       __read
+ 0000:56AA       _segread
+ 0000:56BF       _setdate
+ 0000:56D2       _settime
+ 0000:56E5       __setupio
+ 0000:5782       _stime
+ 0000:57B4       _time
+ 0000:57FB       _tell
+ 0000:5811       _vector_new_(void near*,unsigned int,unsigned int,unsigned int,...)
+ 0000:593B       __VPRINTER
+ 0000:5DE9       __VPTR
+ 0000:5E0E       __VRAM
+ 0000:5E88       ___brk
+ 0000:5EAA       ___sbrk
+ 0000:5EDB       _brk
+ 0000:5EE7       _sbrk
+ 0000:5EF7       __CPUTN
+ 0000:602A       _cprintf
+ 0000:6078       __VideoInt
+ 0000:60FC       __c0crtinit
+ 0000:6119       __crtinit
+ 0000:624E       _delay
+ 0000:62AF       _getch
+ 0000:62C8       __Ngetche
+ 0000:62C8       _getche
+ 0000:62E5       __Nungetch
+ 0000:62E5       _ungetch
+ 0000:6301       _gettext
+ 0000:6355       _puttext
+ 0000:6396       _int86
+ 0000:63BB       _int86x
+ 0000:6457       _kbhit
+ 0000:6469       _movetext
+ 0000:6506       _free
+ 0000:65D5       _malloc
+ 0000:672C       _realloc
+ 0000:677D       _putch
+ 0000:6790       __REALCVT
+ 0000:68C0       __SCREENIO
+ 0000:68FC       __VALIDATEXY
+ 0000:6961       __SCROLL
+ 0000:6B14       __wherexy
+ 0000:6B1E       _wherex
+ 0000:6B2D       _wherey
+ 0000:6B40       _atol
+ 0000:6BB0       _atoi
+ 0000:6BBC       _close
+ 0000:6BE2       __close
+ 0000:6C00       _fflush
+ 0000:6C7D       _flushall
+ 0000:6CB5       _fprintf
+ 0000:6D28       _fseek
+ 0000:6D8C       _ftell
+ 0000:6DD7       _getenv
+ 0000:6E36       _memcpy
+ 0000:6E55       _setmem
+ 0000:6E7B       _memset
+ 0000:6E95       __fputc
+ 0000:6EAC       _fputc
+ 0000:6FD1       _fputchar
+ 0000:6FE2       __FPUTN
+ 0000:7173       ___read
+ 0000:723B       _read
+ 0000:723E       _setvbuf
+ 0000:7308       _strcpy
+ 0000:732A       _strlen
+ 0000:7344       _strncpy
+ 0000:7370       _dostounix
+ 0000:7487       _unixtodos
+ 0000:7655       _tzset
+ 0000:77C4       __ISDST
+ 0000:78A3       ___write
+ 0000:79A7       __write
+ 0000:79E1       _write
+ 0000:79E4       __xfflush
+ 0000:7AE9       Iostream_delete()
+ 0000:7BA1       endl(ostream near&)
+ 0000:7BBB       filebuf::close()
+ 0000:7C32       filebuf::filebuf(int)
+ 0000:7CBC       filebuf::~filebuf()
+ 0000:7D00       filebuf::overflow(int)
+ 0000:7DFC       filebuf::setbuf(char near*,int)
+ 0000:7E7F       filebuf::seekoff(long,seek_dir,int)
+ 0000:7FA6       filebuf::sync()
+ 0000:803F       filebuf::underflow()
+ 0000:818E       istream_withassign::operator =(streambuf near*)
+ 0000:81A4       istream::istream()
+ 0000:81F6       istream_withassign::istream_withassign()
+ 0000:824D       istream::~istream()
+ 0000:8294       istream_withassign::~istream_withassign()
+ 0000:82E4       fpclass(long double)
+ 0000:8327       fpcopysign(long double,long double)
+ 0000:874F       ostream::operator <<(long double)
+ 0000:8825       ostream_withassign::operator =(streambuf near*)
+ 0000:883B       ostream::ostream()
+ 0000:8888       ostream_withassign::ostream_withassign()
+ 0000:88DF       ostream::~ostream()
+ 0000:892B       ostream_withassign::~ostream_withassign()
+ 0000:897B       ostream::flush()
+ 0000:89A5       ostream::operator <<(char)
+ 0000:8A28       ostream::do_opfx()
+ 0000:8A4F       ostream::do_osfx()
+ 0000:8A87       ostream::outstr(const char near*,const char near*)
+ 0000:8C83       streambuf::doallocate()
+ 0000:8CB3       streambuf::streambuf()
+ 0000:8D07       streambuf::do_sgetn(char near*,int)
+ 0000:8D8F       streambuf::do_sputn(const char near*,int)
+ 0000:8E0B       streambuf::~streambuf()
+ 0000:8E3A       streambuf::overflow(int)
+ 0000:8E45       streambuf::pbackfail(int)
+ 0000:8E50       streambuf::setbuf(char near*,int)
+ 0000:8E70       streambuf::setb(char near*,char near*,int)
+ 0000:8ED5       streambuf::setg(char near*,char near*,char near*)
+ 0000:8F11       streambuf::setp(char near*,char near*)
+ 0000:8F3E       streambuf::seekoff(long,seek_dir,int)
+ 0000:8F4C       streambuf::seekpos(long,int)
+ 0000:8F6B       streambuf::sputn(const char near*,int)
+ 0000:8FAF       streambuf::sync()
+ 0000:8FE7       streambuf::underflow()
+ 0000:900B       ios::ios()
+ 0000:9032       ios::~ios()
+ 0000:9061       ios::init(streambuf near*)
+ 0000:909F       ios::setf(long)
+ 0000:9148       ios::setstate(int)
+ 0000:916D       ios::tie(ostream near*)
+ 091B:2152       e086_Entry
+ 091B:26E0       e086_Shortcut
+ 0B93:0306       e087_Entry
+ 0B93:03C6       e087_Shortcut
+ 0B93:0430       e087_Trap
+ 0BF0:0000       DATASEG@
+ 0BF0:0074       __Int0Vector
+ 0BF0:0078       __Int4Vector
+ 0BF0:007C       __Int5Vector
+ 0BF0:0080       __Int6Vector
+ 0BF0:0084       __C0argc
+ 0BF0:0086       __C0argv
+ 0BF0:0088       __C0environ
+ 0BF0:008A       __envLng
+ 0BF0:008C       __envseg
+ 0BF0:008E       __envSize
+ 0BF0:0090       __psp
+ 0BF0:0092       __osversion
+ 0BF0:0092       __osmajor
+ 0BF0:0092       __version
+ 0BF0:0093       __osminor
+ 0BF0:0094       _errno
+ 0BF0:0096       __StartTime
+ 0BF0:009A       ___heapbase
+ 0BF0:009C       ___brklvl
+ 0BF0:009E       __heapbase
+ 0BF0:00A2       __brklvl
+ 0BF0:00A6       __heaptop
+ 0BF0:00AA       _st_
+ 0BF0:00B7       Color::c
+ 0BF0:00BB       _cam
+ 0BF0:0123       _pl
+ 0BF0:0135       _Star
+ 0BF0:0455       _sc
+ 0BF0:0469       _g
+ 0BF0:06D5       _r
+ 0BF0:07AD       _v1
+ 0BF0:07C5       _v2
+ 0BF0:07DD       _bx
+ 0BF0:07F5       _by
+ 0BF0:080D       _bz
+ 0BF0:0825       _c
+ 0BF0:083D       _p
+ 0BF0:083F       _t
+ 0BF0:0847       _d
+ 0BF0:0859       _t1
+ 0BF0:085B       _t2
+ 0BF0:0A30       __8087
+ 0BF0:0A40       __protected
+ 0BF0:0A41       __LDT
+ 0BF0:0A44       __default87
+ 0BF0:0A46       __huge_flt
+ 0BF0:0A4A       __huge_dble
+ 0BF0:0A52       __huge_ldble
+ 0BF0:0A5C       __indefinite
+ 0BF0:0A60       __tiny_ldble
+ 0BF0:0A6A       __mathwhy
+ 0BF0:0C10       __emu
+ 0BF0:0D20       __atexitcnt
+ 0BF0:0D22       __ctype
+ 0BF0:0E24       __exitbuf
+ 0BF0:0E26       __exitfopen
+ 0BF0:0E28       __exitopen
+ 0BF0:0E2A       __streams
+ 0BF0:0F6A       __nfile
+ 0BF0:0F6C       __openfd
+ 0BF0:0F94       __fpstklen
+ 0BF0:0F96       __heaplen
+ 0BF0:0F98       __doserrno
+ 0BF0:0F9A       __dosErrorToSV
+ 0BF0:0FF4       __new_handler
+ 0BF0:0FFA       __stklen
+ 0BF0:1064       __wscroll
+ 0BF0:1066       __video
+ 0BF0:1075       _directvideo
+ 0BF0:10B4       __cFlag
+ 0BF0:10B5       __cChar
+ 0BF0:10B6       __first
+ 0BF0:10B8       __last
+ 0BF0:10BA       __rover
+ 0BF0:10BC       _environ
+ 0BF0:10D0       __monthDay
+ 0BF0:10EA       _tzname
+ 0BF0:10EE       _timezone
+ 0BF0:10F2       _daylight
+ 0BF0:1100       _cin
+ 0BF0:1128       _cout
+ 0BF0:114E       _cerr
+ 0BF0:1174       _clog
+ 0BF0:11B6       filebuf::openprot
+ 0BF0:131C       ios::basefield
+ 0BF0:1320       ios::adjustfield
+ 0BF0:1324       ios::floatfield
+ 0BF0:1328       ios::nextbit
+ 0BF0:132C       ios::usercount
+ 0BF0:132E       ios::stdioflush
+ 0BF0:1332       __RealCvtVector
+ 0BF0:1336       __ScanTodVector
+ 0BF0:1390       __atexittbl
+ 0BF0:13D0       ___SignalPtr
+
+Program entry point at 0000:0000
+

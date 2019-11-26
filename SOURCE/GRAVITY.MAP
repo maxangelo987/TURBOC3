@@ -1,0 +1,809 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 0825CH 0825DH _TEXT              CODE
+ 08260H 0BEB9H 03C5AH _BGI_TEXT          CODE
+ 0BEC0H 0E636H 02777H EMU_PROG           CODE
+ 0E640H 0EC07H 005C8H E87_PROG           CODE
+ 0EC10H 0EC10H 00000H _FARDATA           FAR_DATA
+ 0EC10H 0EC10H 00000H _FARBSS            FAR_BSS
+ 0EC10H 0EC10H 00000H _OVERLAY_          OVRINFO
+ 0EC10H 0EC10H 00000H _1STUB_            STUBSEG
+ 0EC10H 0FE61H 01252H _DATA              DATA
+ 0FE62H 0FE65H 00004H _CVTSEG            DATA
+ 0FE66H 0FE71H 0000CH _SCNSEG            DATA
+ 0FE72H 0FE72H 00000H GRAPH              DATA
+ 0FE72H 0FE72H 00000H _CONST             CONST
+ 0FE72H 0FE89H 00018H _INIT_             INITDATA
+ 0FE8AH 0FE8AH 00000H _INITEND_          INITDATA
+ 0FE8AH 0FE8FH 00006H _EXIT_             EXITDATA
+ 0FE90H 0FE90H 00000H _EXITEND_          EXITDATA
+ 0FE90H 0FED3H 00044H _BSS               BSS
+ 0FED4H 0FED4H 00000H _BSSEND            BSSEND
+ 0FEE0H 0FF5FH 00080H _STACK             STACK
+
+  Address         Publics by Name
+
+ 0000:5DEC       operator delete(void near*)
+ 0000:03D8       operator *(double,vector near&)
+ 0000:60C1       operator new(unsigned int)
+ 0000:04AC       acosh(double)
+ 0000:0401       angle(double,double)
+ 0000:1BDE       button::button(int,int)
+ 0000:39FD       button::handle(event near*)
+ 0826:188F       @DGROUP
+ 0000:1B62       editor::editor(char near*,int,int,int,int)
+ 0000:3885       editor::handle(event near*)
+ 0000:0FEE       endprogram()
+ 0000:0304       getMODEinfo(int,MODEinfo near*)
+ 0000:02CF       getSVGAinfo(SVGAinfo near*)
+ 0000:13CD       GUI::GUI()
+ 0000:1645       GUI::handle(event)
+ 0000:138F       Mouse::~Mouse()
+ 0000:160C       Mouse::getkey(int near&,int near&,int near&)
+ 0000:1B0C       Mouse::hide()
+ 0000:13AE       Mouse::init()
+ 0000:1C47       radiobutton::radiobutton(char near*,char near*,int,int)
+ 0000:3E0C       radiobutton::handle(event near*)
+ 0000:0291       Random(double)
+ 0000:1CD1       screen::screen()
+ 0000:200A       screen::handle(event near*)
+ 0000:1C83       scrollbar::scrollbar(int,int)
+ 0000:3F79       scrollbar::handle(event near*)
+ 0000:0370       setbank(int)
+ 0000:03A1       setstartpixel(int,int)
+ 0000:033F       setSVGAmode(int)
+ 0000:60A8       set_new_handler(void(near*)())
+ 0000:0F65       showmouse(event)
+ 0000:0D5F       status(char near*)
+ 0000:04E3       System::System(double,double,double,double)
+ 0000:12FE       System::f(double)
+ 0000:108F       System::f1(double)
+ 0000:115C       System::f2(double)
+ 0000:123D       System::f3(double)
+ 0000:082B       System::pos(double)
+ 0000:0B66       System::position(double)
+ 0000:0A41       System::posxy(double)
+ 0000:1B2B       text::text(char near*,int,int,int)
+ 0000:1FDE       text::handle(event near*)
+ 0000:424B       Two_Mass_System::Two_Mass_System(double,double,vector,vector,vector,vector)
+ 0000:4873       Two_Mass_System::position(double,vector near&,vector near&)
+ 0000:4731       Two_Mass_System::position_wrt_cm(double,vector near&,vector near&)
+ 0000:40EC       vector::operator +(vector near&)
+ 0000:1356       vector::vector(double,double,double)
+ 0000:49B4       vector::operator /(double)
+ 0000:0FFF       vector::operator *(double)
+ 0000:4180       vector::operator -(vector near&)
+ 0000:4ACD       vector::comp(vector near&)
+ 0000:4B30       vector::cross(vector near&)
+ 0000:4AA0       vector::dot(vector near&)
+ 0000:4214       vector::mod()
+ 0000:4BE3       vector::rot(vector near&)
+ 0000:4A73       vector::unit()
+ 0EC1:0000       DATASEG@
+ 0000:028D       DGROUP@
+ 0BEC:2152       e086_Entry
+ 0BEC:26E0       e086_Shortcut
+ 0E64:0306       e087_Entry
+ 0E64:03C6       e087_Shortcut
+ 0E64:0430       e087_Trap
+ 0000:FE32  Abs  FIARQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:1632  Abs  FIERQQ
+ 0000:0632  Abs  FISRQQ
+ 0000:A23D  Abs  FIWRQQ
+ 0000:4000  Abs  FJARQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:8000  Abs  FJSRQQ
+ 0000:5EB7       F_LDIV@
+ 0000:5EC6       F_LMOD@
+ 0000:5EBE       F_LUDIV@
+ 0000:5ECE       F_LUMOD@
+ 0000:5E81       F_LXMUL@
+ 0000:5E98       F_SCOPY@
+ 0000:5F68       F_SPUSH@
+ 0000:5EB7       LDIV@
+ 0000:5EC6       LMOD@
+ 0000:5EBE       LUDIV@
+ 0000:5ECE       LUMOD@
+ 0000:5E81       LXMUL@
+ 0000:5D9C       N_FTOL@
+ 0000:5EB4       N_LDIV@
+ 0000:5EC3       N_LMOD@
+ 0000:5EBB       N_LUDIV@
+ 0000:5ECB       N_LUMOD@
+ 0000:60F9       N_LXMUL@
+ 0000:6110       N_SCOPY@
+ 0000:5F62       N_SPUSH@
+ 0000:5E98       SCOPY@
+ 0000:5F68       SPUSH@
+ 0000:0278       _abort
+ 0000:5D6F       _acos
+ 0826:12FB       _arc
+ 0000:5D86       _asin
+ 0000:4F62       _atan
+ 0000:5DC8       _atexit
+ 0826:1C68       _bar
+ 0826:1C8B       _bar3d
+ 0000:6E22       _brk
+ 0EC1:00B9       _charheight
+ 0826:1326       _circle
+ 0826:0EFD       _cleardevice
+ 0826:0FB3       _clearviewport
+ 0826:0E53       _closegraph
+ 0000:5C27       _cos
+ 0000:6F71       _cprintf
+ 0EC1:00B7       _cs_
+ 0000:7195       _delay
+ 0826:0656       _detectgraph
+ 0EC1:1205       _directvideo
+ 0826:1C28       _drawpoly
+ 0826:1CCC       _ellipse
+ 0EC1:0094       _errno
+ 0000:5E46       _exit
+ 0000:4F6F       _fabs
+ 0000:7A62       _fflush
+ 0826:1CFC       _fillellipse
+ 0826:1C48       _fillpoly
+ 0826:1EEB       _floodfill
+ 0000:7ADF       _flushall
+ 0000:7B17       _fprintf
+ 0000:7C6F       _fputc
+ 0000:7D94       _fputchar
+ 0000:7473       _free
+ 0000:7B8A       _fseek
+ 0000:7BEE       _ftell
+ 0826:1D69       _getarccoords
+ 0826:1352       _getaspectratio
+ 0826:13FE       _getbkcolor
+ 0000:71F6       _getch
+ 0000:720F       _getche
+ 0826:13ED       _getcolor
+ 0826:1DE9       _getdefaultpalette
+ 0826:10AF       _getdrivername
+ 0826:1264       _getfillpattern
+ 0826:1213       _getfillsettings
+ 0826:0DFE       _getgraphmode
+ 0826:209C       _getimage
+ 0826:115B       _getlinesettings
+ 0826:1DB3       _getmaxcolor
+ 0826:1E27       _getmaxmode
+ 0826:1089       _getmaxx
+ 0826:109C       _getmaxy
+ 0826:10D5       _getmodename
+ 0826:05B7       _getmoderange
+ 0826:14F8       _getpalette
+ 0826:1DCE       _getpalettesize
+ 0826:205B       _getpixel
+ 0000:726E       _gettext
+ 0826:15DB       _gettextsettings
+ 0826:0F94       _getviewsettings
+ 0826:106B       _getx
+ 0826:107A       _gety
+ 0826:0884       _graphdefaults
+ 0826:0193       _grapherrormsg
+ 0826:030D       _graphresult
+ 0826:1517       _imagesize
+ 0826:096A       _initgraph
+ 0826:0BDE       _installuserdriver
+ 0826:0CCC       _installuserfont
+ 0000:7303       _int86
+ 0000:7328       _int86x
+ 0000:5FD4       _isatty
+ 0000:73C4       _kbhit
+ 0826:1C05       _line
+ 0826:1120       _linerel
+ 0826:10F9       _lineto
+ 0000:5B24       _log
+ 0000:607F       _lseek
+ 0000:0D85       _main
+ 0000:7542       _malloc
+ 0000:5887       _matherr
+ 0000:7C39       _memcpy
+ 0826:104B       _moverel
+ 0000:73D6       _movetext
+ 0826:1024       _moveto
+ 0826:15FA       _outtext
+ 0826:1F60       _outtextxy
+ 0826:1388       _pieslice
+ 0826:18D3       _postdevice
+ 0000:5952       _pow
+ 0000:587C       _pow10
+ 0000:76EA       _putch
+ 0826:154C       _putimage
+ 0826:207C       _putpixel
+ 0000:72C2       _puttext
+ 0000:613D       _rand
+ 0000:7699       _realloc
+ 0826:11BD       _rectangle
+ 0826:03F3       _registerfarbgidriver
+ 0826:04AC       _registerfarbgifont
+ 0826:0E21       _restorecrtmode
+ 0000:6E2E       _sbrk
+ 0826:1D39       _sector
+ 0000:67A2       _segread
+ 0826:19F7       _setactivepage
+ 0826:140F       _setallpalette
+ 0826:1370       _setaspectratio
+ 0826:13B3       _setbkcolor
+ 0826:1D92       _setcolor
+ 0826:1284       _setfillpattern
+ 0826:1230       _setfillstyle
+ 0826:0580       _setgraphbufsize
+ 0826:0D76       _setgraphmode
+ 0826:117A       _setlinestyle
+ 0826:14B5       _setpalette
+ 0826:1E62       _setrgbpalette
+ 0826:1648       _settextjustify
+ 0826:1689       _settextstyle
+ 0826:1858       _setusercharsize
+ 0000:7F36       _setvbuf
+ 0826:0F18       _setviewport
+ 0826:19D4       _setvisualpage
+ 0826:1A1D       _setwritemode
+ 0000:5AD9       _sin
+ 0000:8026       _sprintf
+ 0000:58AD       _sqrt
+ 0000:612C       _srand
+ 0000:808A       _sscanf
+ 0000:80C5       _strcat
+ 0EC1:00AA       _st_
+ 0000:6854       _tell
+ 0826:187E       _textheight
+ 0826:200D       _textwidth
+ 0000:722C       _ungetch
+ 0000:8043       _vsprintf
+ 0000:80A8       _vsscanf
+ 0000:7A40       _wherex
+ 0000:7A4F       _wherey
+ 0EC1:0B20       __8087
+ 0000:1000  Abs  __AHINCR
+ 0000:000C  Abs  __AHSHIFT
+ 0EC1:0E30       __atexitcnt
+ 0EC1:1280       __atexittbl
+ 0826:1AE1       __autodetect
+ 0EC1:06D8       __backcolor
+ 0EC1:0653       __BGI_ADD
+ 0EC1:04B6       __BGI_auto
+ 0EC1:04B2       __BGI_ovr
+ 0EC1:00A2       __brklvl
+ 0EC1:0084       __C0argc
+ 0EC1:0086       __C0argv
+ 0000:7043       __c0crtinit
+ 0EC1:0088       __C0environ
+ 0EC1:1245       __cChar
+ 0000:5E67       __cexit
+ 0EC1:1244       __cFlag
+ 0000:016F       __checknull
+ 0000:015C       __cleanup
+ 0000:6E3E       __CPUTN
+ 0000:7060       __crtinit
+ 0EC1:0E32       __ctype
+ 0000:0000  Abs  __cvtfak
+ 0000:5E75       __c_exit
+ 0EC1:064F       __DDO_ADD
+ 0EC1:0B34       __default87
+ 0EC1:10A8       __doserrno
+ 0000:5FC2       __DOSERROR
+ 0EC1:10AA       __dosErrorToSV
+ 0EC1:06D6       __drawcolor
+ 0EC1:0D20       __emu
+ 0EC1:008A       __envLng
+ 0EC1:008C       __envseg
+ 0EC1:008E       __envSize
+ 0000:5E55       __exit
+ 0EC1:0F34       __exitbuf
+ 0EC1:0F36       __exitfopen
+ 0EC1:0F38       __exitopen
+ 0000:58EA       __EXPL
+ 0EC1:06D7       __fillcolor
+ 0EC1:06DA       __fillstyle
+ 0EC1:1246       __first
+ 0000:8087  Abs  __floatconvert
+ 0EC1:06CE       __FON_ADD
+ 0000:572B       __fperror
+ 0EC1:10A4       __fpstklen
+ 0000:4F5E       __fpuint
+ 0000:7C58       __fputc
+ 0000:7DA5       __FPUTN
+ 0000:7248       __graphexit
+ 0000:7254       __graphfreemem
+ 0000:7260       __graphgetmem
+ 0826:0329       __GraphNotInstalled
+ 0826:22C0       __GRP_ovr
+ 0826:1BB4       __gr_cleardevice
+ 0826:1B52       __gr_detectgraph
+ 0EC1:06CC       __gr_ErrCode
+ 0826:1E06       __gr_getmodename
+ 0826:1A90       __gr_imagesize
+ 0826:1BE8       __gr_lineto
+ 0826:1BCB       __gr_moveto
+ 0826:20D9       __gr_putimage
+ 0826:1995       __gr_restorecrtmode
+ 0826:1EA7       __gr_setallpalette
+ 0826:1E43       __gr_setbkcolor
+ 0826:1A40       __gr_setfillpattern
+ 0826:1F30       __gr_setfillstyle
+ 0826:195F       __gr_setgraphmode
+ 0826:1EC2       __gr_setlinestyle
+ 0826:1E88       __gr_setpalette
+ 0826:1A73       __gr_settextjustify
+ 0826:1F96       __gr_settextstyle
+ 0826:1FE7       __gr_setusercharsize
+ 0826:1933       __gr_setviewport
+ 0826:203A       __gr_textheight
+ 0EC1:009E       __heapbase
+ 0EC1:10A6       __heaplen
+ 0EC1:00A6       __heaptop
+ 0EC1:0B3A       __huge_dble
+ 0EC1:0B36       __huge_flt
+ 0EC1:0B42       __huge_ldble
+ 0EC1:0B4C       __indefinite
+ 0826:1B8F       __initdevice
+ 0826:18EA       __installdevice
+ 0EC1:0074       __Int0Vector
+ 0EC1:0078       __Int4Vector
+ 0EC1:007C       __Int5Vector
+ 0EC1:0080       __Int6Vector
+ 0000:5F89       __IOERROR
+ 0EC1:1248       __last
+ 0EC1:0B31       __LDT
+ 0000:4F7E       __LDTRUNC
+ 0EC1:06D9       __linestyle
+ 0000:5FE5       __LONGTOA
+ 0000:5B9B       __matherr
+ 0EC1:0B5A       __mathwhy
+ 0000:028F       __MMODEL
+ 0EC1:1104       __new_handler
+ 0EC1:107A       __nfile
+ 0000:720F       __Ngetche
+ 0000:722C       __Nungetch
+ 0EC1:107C       __openfd
+ 0EC1:0092       __osmajor
+ 0EC1:0093       __osminor
+ 0EC1:0092       __osversion
+ 0EC1:06E1       __OverScanColor
+ 0000:57B3       __POW10
+ 0EC1:0B30       __protected
+ 0EC1:0090       __psp
+ 0000:76FD       __REALCVT
+ 0EC1:1252       __RealCvtVector
+ 0826:18EF       __reinstalldevice
+ 0000:01EC       __restorezero
+ 0EC1:124A       __rover
+ 0000:6163       __scanner
+ 0000:7709       __scanpop
+ 0000:7705       __scanrslt
+ 0000:7701       __scantod
+ 0EC1:1256       __ScanTodVector
+ 0000:6623       __scantol
+ 0000:7839       __SCREENIO
+ 0000:78DA       __SCROLL
+ 0000:67B7       __setupio
+ 0EC1:0096       __StartTime
+ 0EC1:06D2       __StatOfs
+ 0EC1:06D4       __StatSeg
+ 0EC1:118A       __stklen
+ 0EC1:0F3A       __streams
+ 0000:0197       __terminate
+ 0EC1:0B50       __tiny_ldble
+ 0000:0000  Abs  __turboCrt
+ 0000:0000  Abs  __turboCvt
+ 0000:8087  Abs  __turboFloat
+ 0000:6062       __UTOA
+ 0000:7875       __VALIDATEXY
+ 0EC1:0092       __version
+ 0EC1:11F6       __video
+ 0000:6FBF       __VideoInt
+ 0000:6882       __VPRINTER
+ 0000:6D30       __VPTR
+ 0000:6D55       __VRAM
+ 0000:7A36       __wherexy
+ 0000:8202       __write
+ 0EC1:11F4       __wscroll
+ 0000:552C       __XCVT
+ 0000:823C       __xfflush
+ 0000:6DCF       ___brk
+ 0EC1:009C       ___brklvl
+ 0000:4E77       ___fpreset
+ 0EC1:009A       ___heapbase
+ 0826:0178       ___move
+ 0000:6DF1       ___sbrk
+ 0EC1:12C0       ___SignalPtr
+ 0000:80FE       ___write
+
+  Address         Publics by Value
+
+ 0000:0000  Abs  __turboCvt
+ 0000:0000  Abs  __turboCrt
+ 0000:0000  Abs  __cvtfak
+ 0000:000C  Abs  __AHSHIFT
+ 0000:0632  Abs  FISRQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:1000  Abs  __AHINCR
+ 0000:1632  Abs  FIERQQ
+ 0000:4000  Abs  FJARQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:8000  Abs  FJSRQQ
+ 0000:8087  Abs  __turboFloat
+ 0000:8087  Abs  __floatconvert
+ 0000:A23D  Abs  FIWRQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:FE32  Abs  FIARQQ
+ 0000:015C       __cleanup
+ 0000:016F       __checknull
+ 0000:0197       __terminate
+ 0000:01EC       __restorezero
+ 0000:0278       _abort
+ 0000:028D       DGROUP@
+ 0000:028F       __MMODEL
+ 0000:0291       Random(double)
+ 0000:02CF       getSVGAinfo(SVGAinfo near*)
+ 0000:0304       getMODEinfo(int,MODEinfo near*)
+ 0000:033F       setSVGAmode(int)
+ 0000:0370       setbank(int)
+ 0000:03A1       setstartpixel(int,int)
+ 0000:03D8       operator *(double,vector near&)
+ 0000:0401       angle(double,double)
+ 0000:04AC       acosh(double)
+ 0000:04E3       System::System(double,double,double,double)
+ 0000:082B       System::pos(double)
+ 0000:0A41       System::posxy(double)
+ 0000:0B66       System::position(double)
+ 0000:0D5F       status(char near*)
+ 0000:0D85       _main
+ 0000:0F65       showmouse(event)
+ 0000:0FEE       endprogram()
+ 0000:0FFF       vector::operator *(double)
+ 0000:108F       System::f1(double)
+ 0000:115C       System::f2(double)
+ 0000:123D       System::f3(double)
+ 0000:12FE       System::f(double)
+ 0000:1356       vector::vector(double,double,double)
+ 0000:138F       Mouse::~Mouse()
+ 0000:13AE       Mouse::init()
+ 0000:13CD       GUI::GUI()
+ 0000:160C       Mouse::getkey(int near&,int near&,int near&)
+ 0000:1645       GUI::handle(event)
+ 0000:1B0C       Mouse::hide()
+ 0000:1B2B       text::text(char near*,int,int,int)
+ 0000:1B62       editor::editor(char near*,int,int,int,int)
+ 0000:1BDE       button::button(int,int)
+ 0000:1C47       radiobutton::radiobutton(char near*,char near*,int,int)
+ 0000:1C83       scrollbar::scrollbar(int,int)
+ 0000:1CD1       screen::screen()
+ 0000:1FDE       text::handle(event near*)
+ 0000:200A       screen::handle(event near*)
+ 0000:3885       editor::handle(event near*)
+ 0000:39FD       button::handle(event near*)
+ 0000:3E0C       radiobutton::handle(event near*)
+ 0000:3F79       scrollbar::handle(event near*)
+ 0000:40EC       vector::operator +(vector near&)
+ 0000:4180       vector::operator -(vector near&)
+ 0000:4214       vector::mod()
+ 0000:424B       Two_Mass_System::Two_Mass_System(double,double,vector,vector,vector,vector)
+ 0000:4731       Two_Mass_System::position_wrt_cm(double,vector near&,vector near&)
+ 0000:4873       Two_Mass_System::position(double,vector near&,vector near&)
+ 0000:49B4       vector::operator /(double)
+ 0000:4A73       vector::unit()
+ 0000:4AA0       vector::dot(vector near&)
+ 0000:4ACD       vector::comp(vector near&)
+ 0000:4B30       vector::cross(vector near&)
+ 0000:4BE3       vector::rot(vector near&)
+ 0000:4E77       ___fpreset
+ 0000:4F5E       __fpuint
+ 0000:4F62       _atan
+ 0000:4F6F       _fabs
+ 0000:4F7E       __LDTRUNC
+ 0000:552C       __XCVT
+ 0000:572B       __fperror
+ 0000:57B3       __POW10
+ 0000:587C       _pow10
+ 0000:5887       _matherr
+ 0000:58AD       _sqrt
+ 0000:58EA       __EXPL
+ 0000:5952       _pow
+ 0000:5AD9       _sin
+ 0000:5B24       _log
+ 0000:5B9B       __matherr
+ 0000:5C27       _cos
+ 0000:5D6F       _acos
+ 0000:5D86       _asin
+ 0000:5D9C       N_FTOL@
+ 0000:5DC8       _atexit
+ 0000:5DEC       operator delete(void near*)
+ 0000:5E46       _exit
+ 0000:5E55       __exit
+ 0000:5E67       __cexit
+ 0000:5E75       __c_exit
+ 0000:5E81       F_LXMUL@
+ 0000:5E81       LXMUL@
+ 0000:5E98       F_SCOPY@
+ 0000:5E98       SCOPY@
+ 0000:5EB4       N_LDIV@
+ 0000:5EB7       F_LDIV@
+ 0000:5EB7       LDIV@
+ 0000:5EBB       N_LUDIV@
+ 0000:5EBE       F_LUDIV@
+ 0000:5EBE       LUDIV@
+ 0000:5EC3       N_LMOD@
+ 0000:5EC6       F_LMOD@
+ 0000:5EC6       LMOD@
+ 0000:5ECB       N_LUMOD@
+ 0000:5ECE       LUMOD@
+ 0000:5ECE       F_LUMOD@
+ 0000:5F62       N_SPUSH@
+ 0000:5F68       F_SPUSH@
+ 0000:5F68       SPUSH@
+ 0000:5F89       __IOERROR
+ 0000:5FC2       __DOSERROR
+ 0000:5FD4       _isatty
+ 0000:5FE5       __LONGTOA
+ 0000:6062       __UTOA
+ 0000:607F       _lseek
+ 0000:60A8       set_new_handler(void(near*)())
+ 0000:60C1       operator new(unsigned int)
+ 0000:60F9       N_LXMUL@
+ 0000:6110       N_SCOPY@
+ 0000:612C       _srand
+ 0000:613D       _rand
+ 0000:6163       __scanner
+ 0000:6623       __scantol
+ 0000:67A2       _segread
+ 0000:67B7       __setupio
+ 0000:6854       _tell
+ 0000:6882       __VPRINTER
+ 0000:6D30       __VPTR
+ 0000:6D55       __VRAM
+ 0000:6DCF       ___brk
+ 0000:6DF1       ___sbrk
+ 0000:6E22       _brk
+ 0000:6E2E       _sbrk
+ 0000:6E3E       __CPUTN
+ 0000:6F71       _cprintf
+ 0000:6FBF       __VideoInt
+ 0000:7043       __c0crtinit
+ 0000:7060       __crtinit
+ 0000:7195       _delay
+ 0000:71F6       _getch
+ 0000:720F       __Ngetche
+ 0000:720F       _getche
+ 0000:722C       __Nungetch
+ 0000:722C       _ungetch
+ 0000:7248       __graphexit
+ 0000:7254       __graphfreemem
+ 0000:7260       __graphgetmem
+ 0000:726E       _gettext
+ 0000:72C2       _puttext
+ 0000:7303       _int86
+ 0000:7328       _int86x
+ 0000:73C4       _kbhit
+ 0000:73D6       _movetext
+ 0000:7473       _free
+ 0000:7542       _malloc
+ 0000:7699       _realloc
+ 0000:76EA       _putch
+ 0000:76FD       __REALCVT
+ 0000:7701       __scantod
+ 0000:7705       __scanrslt
+ 0000:7709       __scanpop
+ 0000:7839       __SCREENIO
+ 0000:7875       __VALIDATEXY
+ 0000:78DA       __SCROLL
+ 0000:7A36       __wherexy
+ 0000:7A40       _wherex
+ 0000:7A4F       _wherey
+ 0000:7A62       _fflush
+ 0000:7ADF       _flushall
+ 0000:7B17       _fprintf
+ 0000:7B8A       _fseek
+ 0000:7BEE       _ftell
+ 0000:7C39       _memcpy
+ 0000:7C58       __fputc
+ 0000:7C6F       _fputc
+ 0000:7D94       _fputchar
+ 0000:7DA5       __FPUTN
+ 0000:7F36       _setvbuf
+ 0000:8026       _sprintf
+ 0000:8043       _vsprintf
+ 0000:808A       _sscanf
+ 0000:80A8       _vsscanf
+ 0000:80C5       _strcat
+ 0000:80FE       ___write
+ 0000:8202       __write
+ 0000:823C       __xfflush
+ 0826:0178       ___move
+ 0826:0193       _grapherrormsg
+ 0826:030D       _graphresult
+ 0826:0329       __GraphNotInstalled
+ 0826:03F3       _registerfarbgidriver
+ 0826:04AC       _registerfarbgifont
+ 0826:0580       _setgraphbufsize
+ 0826:05B7       _getmoderange
+ 0826:0656       _detectgraph
+ 0826:0884       _graphdefaults
+ 0826:096A       _initgraph
+ 0826:0BDE       _installuserdriver
+ 0826:0CCC       _installuserfont
+ 0826:0D76       _setgraphmode
+ 0826:0DFE       _getgraphmode
+ 0826:0E21       _restorecrtmode
+ 0826:0E53       _closegraph
+ 0826:0EFD       _cleardevice
+ 0826:0F18       _setviewport
+ 0826:0F94       _getviewsettings
+ 0826:0FB3       _clearviewport
+ 0826:1024       _moveto
+ 0826:104B       _moverel
+ 0826:106B       _getx
+ 0826:107A       _gety
+ 0826:1089       _getmaxx
+ 0826:109C       _getmaxy
+ 0826:10AF       _getdrivername
+ 0826:10D5       _getmodename
+ 0826:10F9       _lineto
+ 0826:1120       _linerel
+ 0826:115B       _getlinesettings
+ 0826:117A       _setlinestyle
+ 0826:11BD       _rectangle
+ 0826:1213       _getfillsettings
+ 0826:1230       _setfillstyle
+ 0826:1264       _getfillpattern
+ 0826:1284       _setfillpattern
+ 0826:12FB       _arc
+ 0826:1326       _circle
+ 0826:1352       _getaspectratio
+ 0826:1370       _setaspectratio
+ 0826:1388       _pieslice
+ 0826:13B3       _setbkcolor
+ 0826:13ED       _getcolor
+ 0826:13FE       _getbkcolor
+ 0826:140F       _setallpalette
+ 0826:14B5       _setpalette
+ 0826:14F8       _getpalette
+ 0826:1517       _imagesize
+ 0826:154C       _putimage
+ 0826:15DB       _gettextsettings
+ 0826:15FA       _outtext
+ 0826:1648       _settextjustify
+ 0826:1689       _settextstyle
+ 0826:1858       _setusercharsize
+ 0826:187E       _textheight
+ 0826:188F       @DGROUP
+ 0826:18D3       _postdevice
+ 0826:18EA       __installdevice
+ 0826:18EF       __reinstalldevice
+ 0826:1933       __gr_setviewport
+ 0826:195F       __gr_setgraphmode
+ 0826:1995       __gr_restorecrtmode
+ 0826:19D4       _setvisualpage
+ 0826:19F7       _setactivepage
+ 0826:1A1D       _setwritemode
+ 0826:1A40       __gr_setfillpattern
+ 0826:1A73       __gr_settextjustify
+ 0826:1A90       __gr_imagesize
+ 0826:1AE1       __autodetect
+ 0826:1B52       __gr_detectgraph
+ 0826:1B8F       __initdevice
+ 0826:1BB4       __gr_cleardevice
+ 0826:1BCB       __gr_moveto
+ 0826:1BE8       __gr_lineto
+ 0826:1C05       _line
+ 0826:1C28       _drawpoly
+ 0826:1C48       _fillpoly
+ 0826:1C68       _bar
+ 0826:1C8B       _bar3d
+ 0826:1CCC       _ellipse
+ 0826:1CFC       _fillellipse
+ 0826:1D39       _sector
+ 0826:1D69       _getarccoords
+ 0826:1D92       _setcolor
+ 0826:1DB3       _getmaxcolor
+ 0826:1DCE       _getpalettesize
+ 0826:1DE9       _getdefaultpalette
+ 0826:1E06       __gr_getmodename
+ 0826:1E27       _getmaxmode
+ 0826:1E43       __gr_setbkcolor
+ 0826:1E62       _setrgbpalette
+ 0826:1E88       __gr_setpalette
+ 0826:1EA7       __gr_setallpalette
+ 0826:1EC2       __gr_setlinestyle
+ 0826:1EEB       _floodfill
+ 0826:1F30       __gr_setfillstyle
+ 0826:1F60       _outtextxy
+ 0826:1F96       __gr_settextstyle
+ 0826:1FE7       __gr_setusercharsize
+ 0826:200D       _textwidth
+ 0826:203A       __gr_textheight
+ 0826:205B       _getpixel
+ 0826:207C       _putpixel
+ 0826:209C       _getimage
+ 0826:20D9       __gr_putimage
+ 0826:22C0       __GRP_ovr
+ 0BEC:2152       e086_Entry
+ 0BEC:26E0       e086_Shortcut
+ 0E64:0306       e087_Entry
+ 0E64:03C6       e087_Shortcut
+ 0E64:0430       e087_Trap
+ 0EC1:0000       DATASEG@
+ 0EC1:0074       __Int0Vector
+ 0EC1:0078       __Int4Vector
+ 0EC1:007C       __Int5Vector
+ 0EC1:0080       __Int6Vector
+ 0EC1:0084       __C0argc
+ 0EC1:0086       __C0argv
+ 0EC1:0088       __C0environ
+ 0EC1:008A       __envLng
+ 0EC1:008C       __envseg
+ 0EC1:008E       __envSize
+ 0EC1:0090       __psp
+ 0EC1:0092       __osversion
+ 0EC1:0092       __osmajor
+ 0EC1:0092       __version
+ 0EC1:0093       __osminor
+ 0EC1:0094       _errno
+ 0EC1:0096       __StartTime
+ 0EC1:009A       ___heapbase
+ 0EC1:009C       ___brklvl
+ 0EC1:009E       __heapbase
+ 0EC1:00A2       __brklvl
+ 0EC1:00A6       __heaptop
+ 0EC1:00AA       _st_
+ 0EC1:00B7       _cs_
+ 0EC1:00B9       _charheight
+ 0EC1:04B2       __BGI_ovr
+ 0EC1:04B6       __BGI_auto
+ 0EC1:064F       __DDO_ADD
+ 0EC1:0653       __BGI_ADD
+ 0EC1:06CC       __gr_ErrCode
+ 0EC1:06CE       __FON_ADD
+ 0EC1:06D2       __StatOfs
+ 0EC1:06D4       __StatSeg
+ 0EC1:06D6       __drawcolor
+ 0EC1:06D7       __fillcolor
+ 0EC1:06D8       __backcolor
+ 0EC1:06D9       __linestyle
+ 0EC1:06DA       __fillstyle
+ 0EC1:06E1       __OverScanColor
+ 0EC1:0B20       __8087
+ 0EC1:0B30       __protected
+ 0EC1:0B31       __LDT
+ 0EC1:0B34       __default87
+ 0EC1:0B36       __huge_flt
+ 0EC1:0B3A       __huge_dble
+ 0EC1:0B42       __huge_ldble
+ 0EC1:0B4C       __indefinite
+ 0EC1:0B50       __tiny_ldble
+ 0EC1:0B5A       __mathwhy
+ 0EC1:0D20       __emu
+ 0EC1:0E30       __atexitcnt
+ 0EC1:0E32       __ctype
+ 0EC1:0F34       __exitbuf
+ 0EC1:0F36       __exitfopen
+ 0EC1:0F38       __exitopen
+ 0EC1:0F3A       __streams
+ 0EC1:107A       __nfile
+ 0EC1:107C       __openfd
+ 0EC1:10A4       __fpstklen
+ 0EC1:10A6       __heaplen
+ 0EC1:10A8       __doserrno
+ 0EC1:10AA       __dosErrorToSV
+ 0EC1:1104       __new_handler
+ 0EC1:118A       __stklen
+ 0EC1:11F4       __wscroll
+ 0EC1:11F6       __video
+ 0EC1:1205       _directvideo
+ 0EC1:1244       __cFlag
+ 0EC1:1245       __cChar
+ 0EC1:1246       __first
+ 0EC1:1248       __last
+ 0EC1:124A       __rover
+ 0EC1:1252       __RealCvtVector
+ 0EC1:1256       __ScanTodVector
+ 0EC1:1280       __atexittbl
+ 0EC1:12C0       ___SignalPtr
+
+Error: Undefined symbol _EGAVGA_driver_far in module GRAVITY.CPP
+Program entry point at 0000:0000
+

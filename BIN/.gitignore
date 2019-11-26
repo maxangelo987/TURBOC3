@@ -1,0 +1,7 @@
+!*.CPP
+!*.H
+
+*.BAK
+*.OBJ
+*.DSK
+*.EXE
